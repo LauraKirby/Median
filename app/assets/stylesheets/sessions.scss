@@ -13,72 +13,41 @@ $main-purple: #53455c;
 	-webkit-border-radius: $radius;
 }
 
-#email, #password {
-	border-radius: 5px;
-	width: 200px;
-}
-
+//--------------------- GENERAL PAGE ---------------------
 * {
 	margin: 0 auto;
 	text-align: center;
 }
 
+//--------------------- BACKGROUND IMAGE ---------------------
 #larger {
 	background: image-url("restaurant-690569_1280.jpg") no-repeat center center fixed;
-	height: 2000px;
+	//height: 2000px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	// height: 768px;
-	width: 1024px;
+	height: 100%;
 }
 
-// .navigation-bar {
-// 	height: 50px;
-// 	background-color: $main-gray-neutral;
-// }
-
-h1 {
-	color: $main-dark-blue;
+.get-location{
+	padding-top: 5%; 
 }
 
-.median-logo {
-	// background-image: url("median-logo1.png");
-}
+//--------------------- LOGIN FORM ---------------------
 
-.label {
-	// position: relative;
-	// margin-bottom: 2px;
-}
-
-.login-container {
-	position: relative;
-	margin-top: 50px;
-}
-
-.login-background-color {
+.ui.form.login {
 	background-color: $main-gray-neutral;
 	@include rounded-corners(10px);
-
 	opacity: 0.9;
-	position: relative;
-	padding: 10px 0 10px 0;
 	width: 30%;
+	border-top: 5%;
+	padding-top: 1%;
 }
 
-.form-group {
-	margin-top: 10px;
+.signup-link {
+	margin-top: 1%;
 	position: relative;
-}
-
-.first-label {
-	padding-left: 0;
-	right: 12px;
-}
-
-.form-font {
-	left: 4px;
 }
 
 #submit-user {
@@ -86,39 +55,21 @@ h1 {
 	@include rounded-corners(5px);
 }
 
-.signup-link {
-	margin-top: 10px;
-	position: relative;
+#email, #password {
+	border-radius: 5px;
+	width: 200px;
 }
 
-img {
-	height: 25px;
-}
-
+//--------------------- LOGIN FOOTER ---------------------
 .ui.inverted.segment.footer {
-	position: fixed;
 	background-color: $main-dark-blue;
 	bottom: 0;
 	left: 0;
-	height: 100px;
+	height: 10%;
 	width: 100%;
-	// position: absolute;
-	// top: 500px;
-	// height: 120px;
-	// width: 100%;
-	// margin: 0 auto;
-	// clear: both;
-	// height: 150px;
-	// margin-top: -150px;
-	// position: relative;
-
+	position: absolute;
 }
 
 .logo-class, .image-class {
-	padding-right: 10px;
-}
-
-.test {
-	background-color: $main-turquoise;
-	@include rounded-corners(5px);
+	padding-right: 1%;
 }

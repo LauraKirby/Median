@@ -1,66 +1,55 @@
 <div id="larger" class="get-location">    
 <!-- <div id="desktop-container"> -->
-  <!-- <div class="login-container"> -->
-    <div class="login-background-color">
-      
-      <h1>
+  <div class="ui form login">
+
+
         <div class="median-logo">
           <%= image_tag("median-logo1.png") %>
         </div>
-      </h1> 
+
 
       <h3>Login</h3>
       <!-- begin login form -->
       <%= form_tag login_path do %>
-        <div class="form-group">   
-          <div class="label">
+          <div>
             <%= label_tag :email, nil, class:"control-label" %>
           </div>
-          
+            
           <%= text_field_tag :email, params[:email], autofocus: true, class:"form-control" %>
-      
-        <div class="form-group">
-          <div class="label":><%= label_tag :password, nil, class:"control-label" %></div>
-            <%= password_field_tag :password, params[:password], class:"form-control" %>
-        </div>
-        
-        <p>
-        <%= hidden_field_tag 'user_lat' %>
-        <%= hidden_field_tag 'user_lng' %>
-          <%= submit_tag "Log in", id:"submit-user", :class => 'ui button' %>
-        </p>
+          
+          <div>
+            <div ><%= label_tag :password, nil, class:"control-label" %></div>
+              <%= password_field_tag :password, params[:password], class:"form-control" %>
+          </div>
+          
+          <p>
+            <%= hidden_field_tag 'user_lat' %>
+            <%= hidden_field_tag 'user_lng' %>
+            <%= submit_tag "Log in", id:"submit-user", :class => 'ui button' %>
+          </p>
 
+          <div class="signup-link">
+            <%= link_to "Don't have an account? Sign up here", new_user_path %>
+          </div>
+          <div class="signup-link">
+            <%= link_to "Forgot Password?", new_reset_path %>
 
-        <div class="signup-link">
-          <%= link_to "Don't have an account? Sign up here", new_user_path %>
-        </div>
-        <div class="signup-link">
-          <%= link_to "Forgot Password?", new_reset_path %>
-        </div>
-        <% end %>
-        <!-- end login form -->
+        </div> <!-- end ui form -->
+      <% end %> <!-- end login form -->
 
-    </div>
+  
   </div>
       <div class="ui inverted segment footer">
         <div class="ui inverted secondary menu">
        <!--    <a class="active item image"> -->
           <p class="logo-class">  
             <%= image_tag("median-logo4.png") %>
-          </p><br>
-          <p class="image-class">  
+          </p>
+          <p>  
             <%= image_tag("median-icon2.png") %>
           </p>
-          <!-- </a> -->
-          <a class="active item">
-            Home
-          </a> 
-          <a class="active item">
-            About
-          </a>
-          <a class="active item">
-            Contact
-          </a>   
+          <a href="">About</a>
+          <a href="">Contact</a>
         </div>
       </div> 
 </div>
