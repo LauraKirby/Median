@@ -12,8 +12,8 @@ $(function() {
   var directionsDisplay;
   var directionsService = new google.maps.DirectionsService();
   var map;
-  var infowindow = new google.maps.InfoWindow
-    // geolocation variables
+  var infowindow = new google.maps.InfoWindow;
+  // geolocation variables
   var userLat;
   var userLong;
   var userLatLong;
@@ -40,12 +40,12 @@ $(function() {
       navigator.geolocation.getCurrentPosition(function(loc){
         userLat = loc.coords.latitude;
         userLong = loc.coords.longitude;
-        console.log(userLat + "," + userLong)
+        console.log(userLat + "," + userLong);
 
         //onclick conditional to check if lat and long are populated.. for users
 
-        $("#user_lat").val(userLat)
-        $("#user_lng").val(userLong)
+        $("#user_lat").val(userLat);
+        $("#user_lng").val(userLong);
 
       }, resErr);
     }
@@ -97,8 +97,8 @@ $(function() {
 
   function getLoc(location) {
     // variables declared globally, see top of script
-    userLat = location.coords.latitude;
-    userLong = location.coords.longitude;
+    userLat = 37.765815000000000;
+    userLong = -122.423109000000000;
     userLatLong = new google.maps.LatLng(userLat, userLong);
     marker = new google.maps.Marker({
       position: userLatLong,
@@ -155,11 +155,14 @@ $(function() {
           method: 'get',
           dataType: 'json'
         }).done(function(data) {
-          console.log(data)
+          //console.log(data);
           data.forEach(function(friend) {
             var friendName = friend.first_name;
             var friendLat = friend.lat;
+            //console.log(friendLat);
+            //console.log(friendLng);
             var friendLng = friend.lng;
+            //console.log(friendLng);
             var thisLatLong = new google.maps.LatLng(friendLat, friendLng);
             var marker = new google.maps.Marker({
               animation: google.maps.Animation.DROP,
@@ -243,8 +246,8 @@ $(function() {
 
     mid = google.maps.geometry.spherical.interpolate(userLatLong, friend, 0.5)
 
-    midLat = mid.A
-    midLng = mid.F
+    midLat = mid.A;
+    midLng = mid.F;
       // lat is stored as A, lng is stored as F
       // console.log(mid.A)
 
@@ -342,6 +345,5 @@ $(function() {
       event.stopPropagation();
       showTraffic();
     });
-
   }
 }); // closing tag for everything in this file

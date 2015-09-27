@@ -1,0 +1,27 @@
+      <% if logged_in? %>
+        <div class="ui inverted segment">
+          <a class="active item">
+            <%= image_tag("median-logo3.png") %>
+          </a>
+          <a class="active item image">
+            <%= image_tag("median-icon2.png") %>
+          </a>
+          <%= link_to "Home", users_path(), :class=>"active item" %>
+          <%= link_to "Profile", user_path(session[:user_id]), :class=>"active item"%>
+          <%= link_to "Signout", logout_path, method: :delete, :class=>"active item" %>
+        </div>
+       <% end  %>
+      
+    <!--   add flash messages -->
+
+
+    <% flash.each do |key, value| %>
+    <% if key == "notice" %>
+    <%= content_tag :div, value, class: "text-center alert alert-warning" %>
+    <% elsif key == "alert" %>
+    <%= content_tag :div, value, class: "text-center alert alert-danger" %>
+    <% else %>
+    <%= content_tag :div, value, class: "text-center alert alert-success" %>
+    <% end %>
+    <% end %>
+
