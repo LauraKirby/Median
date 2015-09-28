@@ -1,10 +1,8 @@
-<div id="larger" class="get-location">    
+<div id="larger" class="get-location image_padding">    
 <!-- <div id="desktop-container"> -->
   <div class="ui form login">
-
-
         <div class="median-logo">
-          <%= image_tag("median-logo1.png") %>
+          Log in to<%= image_tag("median-logo1.png") %>
         </div>
 
 
@@ -33,27 +31,21 @@
           </div>
           <div class="signup-link">
             <%= link_to "Forgot Password?", new_reset_path %>
-
-        </div> <!-- end ui form -->
+          </div> 
       <% end %> <!-- end login form -->
+  </div><!-- end ui form -->
 
-  
-  </div>
-      <div class="ui inverted segment footer">
-        <div class="ui inverted secondary menu">
-       <!--    <a class="active item image"> -->
-          <p class="logo-class">  
-            <%= image_tag("median-logo4.png") %>
-          </p>
-          <p>  
-            <%= image_tag("median-icon2.png") %>
-          </p>
-          <a href="">About</a>
-          <a href="">Contact</a>
-        </div>
-      </div> 
+  <div class="ui inverted segment footer">
+    <%= link_to "About Median", about_path, :class => "footer_link"%>
+    <%= link_to "Our Team", contact_us_path, :class => "footer_link"%>
+  </div> 
+
 </div>
+
+<div class="ui grid">
+  <div class="sixteen wide column darkblue"></div>  
 </div>
+
 
 <!-- <script>
   

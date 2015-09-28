@@ -1,0 +1,62 @@
+// Place all the styles related to the basics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$main-dark-blue: #394263;
+$main-gray-neutral: #e8e9fe;
+$main-turquoise: #20b6ad;
+$main-light-blue: #559adf;
+$main-purple: #53455c;
+
+
+//** ------------------------ CONTACT PAGE ------------------------ **//
+//----------------------------------------------------------------------
+
+//------------------------ GENERAL PAGE ------------------------
+.style_font{
+	font-family: 'Playfair Display', serif;
+}
+
+.gray_neutral {
+	background-color: $main-gray-neutral
+}
+
+
+//------------------------ HEADER ------------------------
+.darkblue{
+	background-color: $main-dark-blue
+}
+
+
+//------------------------ BODY / TEAM MEMBER ------------------------
+.ui.grid.padding {
+	padding: 5% 5%;
+}
+
+.contact {
+	color: $main-dark-blue
+}
+
+.linkedin_icon {
+	color: $main-turquoise
+	
+}
+
+img.each_member {
+	width: 75%;
+	height: 75%;
+	border-radius: 5%;
+}
+
+.contact_link{
+	color: grey;
+	margin-bottom: 5%;	
+}
+
+
+//** ------------------------ ABOUT PAGE ------------------------ **//
+//----------------------------------------------------------------------
+
+//------------------------ BODY ------------------------
+.about_text {
+	color: white;
+}

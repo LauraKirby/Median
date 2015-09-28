@@ -1,0 +1,38 @@
+<div id="larger" class="image_padding"> 
+	<div>
+		<%= link_to "Sign up", new_user_path, :class => "ui button"%>
+		<%= link_to "Sing in", login_path, :class => "ui button"%>
+	</div>   
+
+	<h1>Median </h1>
+	
+	<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <div class="ui inverted segment footer">
+    <%= link_to "Our Team", contact_us_path, :class => "footer_link"%>
+  </div> 
+
+</div>
+
+
+<!-- <script>
+  
+  var images = ["/assets/restaurant-690569_1280.jpg", "https://static.pexels.com/photos/5938/food-salad-healthy-lunch.jpg", "/assets/restaurant-690569_1280.jpg"];
+
+  var randomNum = Math.floor(Math.random() * images.length); 
+  console.log(randomNum);
+
+  var randomImage = images[randomNum];
+
+$("#larger").css("background", "url(" + randomImage + ")");
+
+console.log(randomImage);
+
+</script> 
+-->
+
+<!--  hidden field with latitude and longitude. sent when user hits submit..
+  - type: hidden, for input element.. 
+
+ when user hits button, calculate lat and lng, prevent default action of button.. 
+  - send  -->

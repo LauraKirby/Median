@@ -30,7 +30,7 @@ $main-purple: #53455c;
 	height: 100%;
 }
 
-.get-location{
+.image_padding{
 	padding-top: 5%; 
 }
 
@@ -50,26 +50,39 @@ $main-purple: #53455c;
 	position: relative;
 }
 
+.ui.button {
+	color: $main-dark-blue !important;
+}
+
 #submit-user {
-	margin-top: 20px;
-	@include rounded-corners(5px);
+	margin-top: 5%;
 }
 
 #email, #password {
-	border-radius: 5px;
-	width: 200px;
+	margin-bottom: 5%;
+	width: 60%;
 }
 
 //--------------------- LOGIN FOOTER ---------------------
 .ui.inverted.segment.footer {
 	background-color: $main-dark-blue;
 	bottom: 0;
-	left: 0;
-	height: 10%;
+	right: 0;
+
 	width: 100%;
 	position: absolute;
+	text-align: right;
 }
 
-.logo-class, .image-class {
-	padding-right: 1%;
+a.footer_link{
+	margin-right: 3%;
+	color: white
+}
+
+.img_footer{
+	padding-right: 10%
+}
+
+.logo-class {
+	padding-right: 2%;
 }

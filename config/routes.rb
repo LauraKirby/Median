@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   # the results action here
   get '/results', to: 'places#results'
   get '/friends', to: 'users#friends'
+
+  get '/about', to: 'basics#about'
+  get '/contact_us', to: 'basics#contact_us'
 end
 
 # Prefix Verb   URI Pattern                Controller#Action
@@ -49,3 +52,5 @@ end
 #     search GET    /search(.:format)          places#search
 #    results GET    /results(.:format)         places#results
 #    friends GET    /friends(.:format)         users#friends
+#      about GET    /about(.:format)           basics#about
+# contact_us GET    /contact_us(.:format)      basics#contact_us
