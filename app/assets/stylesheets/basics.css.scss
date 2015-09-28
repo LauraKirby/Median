@@ -12,24 +12,37 @@ $main-purple: #53455c;
 //----------------------------------------------------------------------
 
 //------------------------ GENERAL PAGE ------------------------
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	background-color: $main-gray-neutral;
+}
+.lightPurple{
+	background-color: $main-gray-neutral;
+}
 .style_font{
 	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 200%;
 }
 
 .gray_neutral {
-	background-color: $main-gray-neutral
+	background-color: $main-gray-neutral;
 }
 
 
 //------------------------ HEADER ------------------------
 .darkblue{
-	background-color: $main-dark-blue
+	background-color: $main-dark-blue;
 }
 
 
 //------------------------ BODY / TEAM MEMBER ------------------------
 .ui.grid.padding {
-	padding: 5% 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5%;
+	postion:absolute
 }
 
 .contact {
@@ -38,20 +51,37 @@ $main-purple: #53455c;
 
 .linkedin_icon {
 	color: $main-turquoise
-	
 }
 
 img.each_member {
-	width: 75%;
-	height: 75%;
+	width: 80%;
+	height: 80%;
 	border-radius: 5%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .contact_link{
-	color: grey;
-	margin-bottom: 5%;	
+	color: $main-turquoise;
 }
 
+.description{
+	padding-top: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 120%;
+}
+
+//------------------------ FOOTER ------------------------
+.ui.inverted.segment.about {
+	background-color: $main-dark-blue;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: right;
+	position: fixed;
+}
 
 //** ------------------------ ABOUT PAGE ------------------------ **//
 //----------------------------------------------------------------------
@@ -60,3 +90,4 @@ img.each_member {
 .about_text {
 	color: white;
 }
+

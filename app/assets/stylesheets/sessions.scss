@@ -13,16 +13,9 @@ $main-purple: #53455c;
 	-webkit-border-radius: $radius;
 }
 
-//--------------------- GENERAL PAGE ---------------------
-* {
-	margin: 0 auto;
-	text-align: center;
-}
-
 //--------------------- BACKGROUND IMAGE ---------------------
 #larger {
 	background: image-url("restaurant-690569_1280.jpg") no-repeat center center fixed;
-	//height: 2000px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -43,6 +36,8 @@ $main-purple: #53455c;
 	width: 30%;
 	border-top: 5%;
 	padding-top: 1%;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .signup-link {
@@ -68,19 +63,14 @@ $main-purple: #53455c;
 	background-color: $main-dark-blue;
 	bottom: 0;
 	right: 0;
-
 	width: 100%;
-	position: absolute;
 	text-align: right;
+	position: fixed;
 }
 
 a.footer_link{
 	margin-right: 3%;
-	color: white
-}
-
-.img_footer{
-	padding-right: 10%
+	color: white;
 }
 
 .logo-class {
