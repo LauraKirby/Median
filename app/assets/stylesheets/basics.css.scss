@@ -42,7 +42,11 @@ h1 {
 	font-size: 200%;
 }
 
-//------------------------ BODY / TEAM MEMBER ------------------------
+.ui.inverted.segment.contact{
+	background-color: $main-dark-blue;
+}
+
+//-------------------- BODY / TEAM MEMBER -------------------
 .ui.grid.padding {
 	padding-right: 5%;
 	padding-left: 5%;

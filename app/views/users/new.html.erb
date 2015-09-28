@@ -5,16 +5,15 @@
    <div class="sixteen wide column">
     <div class="ui form">
 	    <div class="signup-form-background">
-			  <div class="median-logo">
+			  
+			  <div class="field median-logo">
 				  <%= image_tag("median-logo1.png") %>
+				  <span class="signUpInHeader">Sign-up</span>
 			  </div>
 		    
 
 			  <%= form_for @user, :html => { :multipart => true }  do |f| %>
 			  <%= render partial: 'users/errors', locals:{instance:@user} %>
-			  <div class="field">
-			  	<h3>Signup</h3>
-			  </div>
 			  <div class="field">
 					<%= f.text_field :first_name, :placeholder => "First Name"%>
 			  </div>
@@ -54,14 +53,13 @@
 </div><!-- end wrapper -->
 
 
+
+
 <div id="footer">
-<div class="ui grid">
-  <div class="nine wide column darkblue"></div>
-  <div class="six wide column darkblue">
-		  <%= link_to " About Median ", about_path, :class => "footer_link"%>
-		   <%= link_to " Our Team ", contact_us_path, :class => "footer_link"%>
-	</div> 
-  <div class="one wide column darkblue"></div>
-</div>
+
+        <div class="ui inverted segment footer">
+          <%= link_to " About Median ", about_path, :class => "footer_link"%>
+          <%= link_to " Our Team ", contact_us_path, :class => "footer_link"%>
+        </div> 
 </div>
 

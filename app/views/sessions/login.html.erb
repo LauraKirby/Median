@@ -1,38 +1,37 @@
 <div id="larger" class="get-location image_padding">    
-<!-- <div id="desktop-container"> -->
+
   <div class="ui form login">
-        <div class="median-logo">
-          Log in to<%= image_tag("median-logo1.png") %>
+  
+        <div class="field median-logo">
+          <h3 class="signInHeader">Login to</h3>
+          <%= image_tag("median-logo1.png") %>
         </div>
 
-
-      <h3>Login</h3>
-      <!-- begin login form -->
-      <%= form_tag login_path do %>
-          <div>
-            <%= label_tag :email, nil, class:"control-label" %>
-          </div>
-            
-          <%= text_field_tag :email, params[:email], autofocus: true, class:"form-control" %>
-          
-          <div>
-            <div ><%= label_tag :password, nil, class:"control-label" %></div>
-              <%= password_field_tag :password, params[:password], class:"form-control" %>
+      <%= form_tag login_path do %>           
+          <div class="field">
+            <%= text_field_tag :email, params[:email], autofocus: true, :placeholder => "Email", class:"form-control" %>
           </div>
           
-          <p>
+          <div class="field">
+              <%= password_field_tag :password, params[:password], :placeholder => "Password", class:"form-control" %>
+          </div>
+          
+            <!-- hidding tags for user location -->
             <%= hidden_field_tag 'user_lat' %>
             <%= hidden_field_tag 'user_lng' %>
-            <%= submit_tag "Log in", id:"submit-user", :class => 'ui button' %>
-          </p>
 
-          <div class="signup-link">
+          <div class="field">
+            <%= submit_tag "Log in", id:"submit-user", :class => 'ui button' %>
+          </div>
+
+          <div class="field">
             <%= link_to "Don't have an account? Sign up here", new_user_path %>
           </div>
-          <div class="signup-link">
+
+          <div class="field forgotPassword">
             <%= link_to "Forgot Password?", new_reset_path %>
           </div> 
-      <% end %> <!-- end login form -->
+      <% end %> <!-- end form_tag -->
   </div><!-- end ui form -->
 
   <div class="ui inverted segment footer">
@@ -40,10 +39,6 @@
     <%= link_to "Our Team", contact_us_path, :class => "footer_link"%>
   </div> 
 
-</div>
-
-<div class="ui grid">
-  <div class="sixteen wide column darkblue"></div>  
 </div>
 
 

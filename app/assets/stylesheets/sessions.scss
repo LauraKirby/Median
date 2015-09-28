@@ -39,20 +39,18 @@ $main-purple: #53455c;
 	padding-top: 1%;
 	text-align: center;
 	margin: 0 auto;
+	padding:2% 2%;
 }
 
-.signup-link {
-	margin-top: 1%;
+.signInHeader{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 150%;
+}
+
+.forgotPassword {
+	padding-bottom: 5%;
 	position: relative;
-}
-
-#submit-user {
-	margin-top: 5%;
-}
-
-#email, #password {
-	margin-bottom: 5%;
-	width: 60%;
 }
 
 //--------------------- LOGIN FOOTER ---------------------
@@ -74,6 +72,7 @@ a.footer_link{
 	color: white;
 	display: inline-block;
 	white-space: nowrap;
+	font-size: 110%;
 }
 
 .logo-class {
