@@ -1,10 +1,8 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
 // This code below is for the signup page
+
 $main-dark-blue: #394263;
 $main-gray-neutral: #e8e9fe;
 $main-turquoise: #20b6ad;
@@ -21,6 +19,56 @@ $main-purple: #53455c;
 	position: relative;
 }
 
+// ------------------ SIGN-UP / NEW USER ------------------
+
+#signup-larger {
+	background: url("skater-821502_1920.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+.signup-form-background {
+	background-color: $main-gray-neutral;
+	@include rounded-corners(10px);
+	opacity: 0.9;
+	width: 30%;
+	margin-top:10%;
+	margin-bottom:10%;
+	margin-right: 3%;
+	float: right;
+	padding:2% 2%;
+}
+
+.login_here {
+	padding-top:3%;
+}
+// ------------------ USER SHOW PAGE ------------------
+
+body.users.show {
+	text-align: center;
+	background: url("city-restaurant-lunch-outside.jpg");
+	height: 855px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.show-profile-info {
+	background-color: $main-gray-neutral;
+	@include rounded-corners(10px);
+
+	opacity: 0.9;
+	position: relative;
+	padding: 100px 0 100px 0;
+	// height: 70%;
+	width: 40%;
+}
+
 #map-index, .body.users.index {
 	background-color: $main-gray-neutral;
 	height: 2000px;
@@ -32,26 +80,9 @@ $main-purple: #53455c;
 	-o-background-size: cover; 
 }
 
-div.ui.inverted.segment {
-	background-color: $main-dark-blue;
-	text-align: justify;
-}
-
 a.active.item {
 	color: white;
 	padding-right: 10px; 
-}
-
-h1 {
-	color: white;
-}
-
-img {
-	height: 25px;
-}
-
-.ui.form {
-	padding-bottom: 1.5em;
 }
 
 p.search-field {
@@ -67,19 +98,12 @@ p.search-field {
 #q {
 	width: 200px;
 	@include rounded-corners(5px);
-	// padding-top: 1em;
-	// position: relative;
 }
+
 #transit, #bike, #traffic {
 	background-color: #559adf;
 	border-radius: 5px;
 	color: white;
-}
-
-.col-md-2.h5 {
-	position: relative;
-	padding-bottom: 15px;
-	padding-top: 15px;
 }
 
 .col-md-2 {
@@ -107,80 +131,6 @@ div.gymnoprint {
 	float: right;
 }
 
-#signup-larger {
-	background: url("skater-821502_1920.jpg") no-repeat center center fixed;
-	height: 8555px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#user_first_name {
-	position: relative;
-	left: 2px;
-	border-radius: 5px;
-  width: 200px;
-}
-
-#user_email, #user_img_url, #user_address, #user_password {
-	border-radius: 5px;
-  width: 200px;
-}
-
-.avatar-label {
-	left: 25px;
-	position: relative;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-
-.signup-background-color {
-	background-color: $main-gray-neutral;
-	@include rounded-corners(10px);
-
-	opacity: 0.9;
-	position: relative;
-	padding: 10px 0 10px 0;
-	width: 30%;
-
-}
-
-#submit-button {
-	@include rounded-corners(10px);
-	position: relative;
-	padding-top: 20px;
-}
-
-.first {
-	position: relative;
-	padding-right: 20px;
-}
-
-
-// ------------------ USER SHOW PAGE ------------------
-
-body.users.show {
-	text-align: center;
-	background: url("city-restaurant-lunch-outside.jpg");
-	height: 855px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.show-profile-info {
-	background-color: $main-gray-neutral;
-	@include rounded-corners(10px);
-
-	opacity: 0.9;
-	position: relative;
-	padding: 100px 0 100px 0;
-	// height: 70%;
-	width: 40%;
-}
-
 ul {
 	list-style-type: none;
 	padding-top: 5px;
@@ -201,7 +151,7 @@ ui.inverted.segment.show {
 	top: 60px;
 }
 
-// This code is for the edit page
+// ------------------ USER EDIT PAGE ------------------
 .edit-form {
 	text-align: center;
 	margin-top: 50px;
@@ -236,8 +186,7 @@ ui.inverted.segment.show {
 	width: 200px;
 }
 
-
-// This code is for the show page
+// ------------------ USER SHOW PAGE ------------------
 
 .header-container {
 	float: left;
@@ -284,9 +233,6 @@ ul {
 	height: 150px;
 	@include rounded-corners(10px);
 }
-// .item {
-// 	padding-right: 10px;
-// }
 
 .just-background-color {
 	background-color: $main-gray-neutral;
@@ -294,5 +240,4 @@ ul {
 .meet {
 	padding-bottom: 2px;
 }
-
 

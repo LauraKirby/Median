@@ -24,6 +24,7 @@ $main-purple: #53455c;
 }
 
 .image_padding{
+	margin-top:0px;
 	padding-top: 5%; 
 }
 
@@ -45,10 +46,6 @@ $main-purple: #53455c;
 	position: relative;
 }
 
-.ui.button {
-	color: $main-dark-blue !important;
-}
-
 #submit-user {
 	margin-top: 5%;
 }
@@ -61,16 +58,22 @@ $main-purple: #53455c;
 //--------------------- LOGIN FOOTER ---------------------
 .ui.inverted.segment.footer {
 	background-color: $main-dark-blue;
-	bottom: 0;
-	right: 0;
+	bottom: 0px;
+	right: 0px;
 	width: 100%;
 	text-align: right;
 	position: fixed;
 }
 
 a.footer_link{
-	margin-right: 3%;
+	text-align: right;
+	float: right;
+	margin: 0px;
+	padding-right: 4%;
+	align: right;
 	color: white;
+	display: inline-block;
+	white-space: nowrap;
 }
 
 .logo-class {

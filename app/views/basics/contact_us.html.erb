@@ -1,5 +1,5 @@
-<div id="wrapper">
 
+<div class="wrapper"> 
 <div class="ui grid">
 <!-- row zero -->
 	<div class="sixteen wide column darkblue"></div>
@@ -15,7 +15,7 @@
 </div>
 
 <!-- row two -->
-<div class="ui grid padding gray_neutral">
+<div class="ui grid padding lightPurple">
   <div class="four wide column">
   	<img class="each_member" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKkAAAAJGU3NjZkYjc5LTY5ZDItNDFmYi1hMWIzLTEzZGQzNTMxNjQyZA.jpg" alt="Lorien Smyer">
   	<div>
@@ -61,14 +61,24 @@
 <!-- row three -->
 
 
-	<div class="sixteen wide column">
-		<div class="ui inverted segment about">
+<div class="clearfooter"></div>
+</div><!-- end wrapper -->
+
+
+<div id="footer">
+<div class="ui grid">
+  <div class="nine wide column darkblue"></div>
+  <div class="six wide column darkblue">
 		  <%= link_to "About Median", about_path, :class => "footer_link"%>
 		  <%= link_to "Sign up", new_user_path, :class => "footer_link"%>
 		  <%= link_to "Sign in", login_path, :class => "footer_link"%>
-		</div> 
-  </div>
-
-
-
+	</div> 
+  <div class="one wide column darkblue"></div>
 </div>
+</div>
+
+
+
+
+
+
