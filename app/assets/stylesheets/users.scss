@@ -141,8 +141,9 @@ div.gymnoprint {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	height: 100%;
 	padding-top: 10%;
+	margin: 0 auto;
 }
 
 .ui.form.editForm {
@@ -158,13 +159,12 @@ div.gymnoprint {
 
 .profileBackground {
 	background: url("city-restaurant-lunch-outside.jpg");
-	height: 855px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	height: 100%;
 	padding-top: 10%;
-	margin-top: 0%;
+	margin: 0 auto;
 }
 
 .avatar{
