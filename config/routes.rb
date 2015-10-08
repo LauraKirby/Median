@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'sessions#login'
+  root 'basics#about'
   get '/login', to: "sessions#login", as: 'login'
   post '/login', to: "sessions#attempt_login"
   delete '/logout', to: "sessions#logout", as: "logout"
