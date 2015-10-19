@@ -74,7 +74,8 @@ a.active.item {
 
 #map-index, .body.users.index {
 	background-color: $main-gray-neutral;
-	height: 2000px;
+	height: 75%;
+	width: 75%;
 	margin: 0 auto;
 	text-align: center;
 	background-size: cover;
@@ -91,9 +92,7 @@ a.active.item {
 #q
 
 #transit, #bike, #traffic {
-	background-color: #559adf;
-	border-radius: 5px;
-	color: white;
+	//background-color: #559adf;
 }
 
 .col-md-2 {
