@@ -83,20 +83,12 @@ a.active.item {
 	-o-background-size: cover; 
 }
 
-p.search-field {
-	position: relative;
-	padding-top: 5px;
-}
-
 #q1 {
 	padding-bottom: 1em;
 	position: relative;
 }
 
-#q {
-	width: 200px;
-	@include rounded-corners(5px);
-}
+#q
 
 #transit, #bike, #traffic {
 	background-color: #559adf;
@@ -112,13 +104,6 @@ p.search-field {
 	display: none;
 }
 
-div.search-container {
-	background-color: white;
-	border-radius: 5px;
-	color: black;
-	right: 50px;
-	width: 60%;
-}
 
 div.column.first, .search-field {
 	text-align: justify;
