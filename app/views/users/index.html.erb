@@ -2,40 +2,65 @@
 
 <!-- The class="index" in the h3 tag below is needed for the users.js file. Do not remove -->
 <h3 class="index"></h3>
-	<div class="ui two column centered grid">
-		<div class="column first">
-		  <div class ="ui form">
-		    <%= form_tag("/search", method: "get") do %>
-		    	<div class="three fields">
-		    			<div class="field">
-		    				<%= label_tag(:q, "Search for a category:", ) %>
-		    			</div>
-		    		  <div class="field">
-		    		  	<!-- keep user_term for js selector -->
-		    		  	<%= text_field_tag(:q, nil, class:"user_term", autofocus: true) %>
-		    		  </div>
-		    		  <div class="field">
-		    		  	<%= submit_tag("Search", class:"tiny ui button") %>
-		    		  </div>
-		    	</div>
-		    <% end %>
-		  </div>
-	  </div>
-	</div>
+	<div class="ui grid">
+	<!-- Column widths can be specified using (x) wide class names. If a column cannot fit in a row it will automatically flow to the next row  -->
+		<div class="three column row marginFormMap">
+		<!-- IDs "friends" and "show" are needed for handlebar files. Do not remove -->
+			<div class="one wide column"></div>
+		
+			<div class="five wide column">
+				<table class="ui table">
+					<tbody>
+					  <tr>
+					    <td>
+					      <div class="ui blue ribbon label">First</div>
+					    </td>
+					    <td>
+					    	<p>View logged-in friends.</p>
+					    	<button id="friends" class="tiny ui button minWidth">View Friends</button></td>
+					  </tr>
+					  <tr>
+					  	<td>
+					  		<div class="ui blue ribbon label">Second</div>
+					  	</td>
+					    <td>
+					    	<p>Select a friend below.</p>
+					    	<div class="loggedInFriends" id="show"></div>
+					    </td>
+					    
+					  </tr>
+					  <tr>
+					  	<td>
+					  	<div class="ui blue ribbon label">Thrid</div>
+					  	</td>
+					    <td>
+					    	<div class ="ui form">
+					    		<p>Search nearby venues.</p>
+					    	  <%= form_tag("/search", method: "get") do %>
 
-		<div class="ui grid">
-			<div class="three column row">
-			<!-- IDs "friends" and "show" are needed for handlebar files. Do not remove -->
-				<div class="two wide column"><button id="friends" class="small ui button">Logged-in Friends</button></div>
-				<div class="two wide column" id="show"></div>
-				<div class="twelve wide column"><div id='map'></div></div>
-				<div class="two wide column"></div>
+					    	  			<div class="field">
+					    	  				<% label_tag(:q) %>
+					    	  			</div>
+					    	  		  <div class="field">
+					    	  		  	<!-- keep user_term for js selector -->
+					    	  		  	<%= text_field_tag(:q, nil, class:"user_term field", autofocus: true) %>
+					    	  		  </div>
+					    	  		  <div class="field">
+					    	  		  	<%= submit_tag("Search", class:"tiny ui button") %>
+					    	  		  </div>
+
+					    	  <% end %>
+					    	</div>
+					    </td>
+					  </tr>
+					</tbody>
+				</table>
+
 			</div>
+			<div class="one wide column"></div>
+			<div class="eight wide column"><div id='map'></div></div>
+			<div class="one wide column"></div>
 		</div>
-
-			<div class="column first">
-				<div id='map'></div>
-			</div>
-
+	</div>
 </div>
 
