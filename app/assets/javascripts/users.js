@@ -97,8 +97,8 @@ $(function() {
 
   function getLoc(location) {
     // variables declared globally, see top of script
-    userLat = loc.coords.latitude;
-    userLong = loc.coords.longitude;
+    userLat = location.coords.latitude;
+    userLong = location.coords.longitude;
     userLatLong = new google.maps.LatLng(userLat, userLong);
     marker = new google.maps.Marker({
       position: userLatLong,
