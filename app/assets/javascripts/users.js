@@ -6,7 +6,7 @@
 //   alert("HELLO")
 // })
 // another way to specify a page specific event, but this needs turbo-links to work, which is not the case for us.
-
+//test
 $(function() {
 
   var directionsDisplay;
