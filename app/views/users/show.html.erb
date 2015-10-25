@@ -1,29 +1,28 @@
 
-<div class="profileBackground">
+<div class="profileBackground ui fluid image">
 	
 
 	  <div class="show-profile-info">
 		<h2 class="profileHeader" >Hello, <%= @current_user.first_name %></h2>
 
 
-		<ul class="user-profile-info profile">
-			<li class="profile">
-				<%= image_tag @current_user.avatar, :class => "avatar" %>
-			</li>
-			<li class="profile">
-				<%= @current_user.first_name %></li>
-			<li class="profile">
-				<%= @current_user.email %></li>
-			<li lass="profile">
-				<%= @current_user.address%>
-			</li>
-			<li class="profile">
-				<%= link_to "Edit Profile",edit_user_path(@current_user), :class => 'ui button'%><br>
-			</li>
-			<li class="profile">	
+
+		<form class="ui center form profileForm">
+			<%= image_tag @current_user.img_url, :class => "avatarProfile field" %>
+			<div class="field">
+				<p>User Name: <%= @current_user.first_name %></p>
+			</div>
+			<div class="center aligned field">
+				<p>Email: <%= @current_user.email %></p>
+			</div>
+			<div class="field">
+				<p>Address: <%= @current_user.address%></p>
+			</div>
+			<div class="field">
+				<%= link_to "Edit Profile",edit_user_path(@current_user), :class => 'ui button'%>
 				<%= link_to "Delete Account", user_path(@current_user), :class => 'ui button', method: :delete %><br>
-			</li>
-		</ul>
+			</div>
+		</form>
 	</div>	
 
 

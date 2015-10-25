@@ -55,7 +55,7 @@ $main-purple: #53455c;
 
 // ------------------ LOGGED-IN NAV BAR ------------------
 
-.sixteen.wide.column.loggedIn {
+.loggedIn {
 	background-color: $main-dark-blue;
 }
 
@@ -65,9 +65,20 @@ $main-purple: #53455c;
 	padding-top: 2%;
 }
 
+.signOutCol {
+	
+}
+div.ui.secondary.menu.loggedIn {
+	background-color: $main-dark-blue;
+}
+
 a.active.item {
 	color: white;
 	padding-right: 10px; 
+}
+
+.ui.menu.item{
+	background-color: $main-dark-blue;
 }
 
 // ------------------ USER INDEX PAGE ------------------
@@ -149,12 +160,11 @@ div.gymnoprint {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	height: 100%;
-	padding-top: 10%;
-	margin: 0 auto;
-}
+	padding-top: 5%;
+	padding-bottom: 10%;
 
-.avatar{
+}
+.avatarProfile{
 	height: 150px;
 	@include rounded-corners(10px);
 }

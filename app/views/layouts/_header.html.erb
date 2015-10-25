@@ -1,20 +1,20 @@
-      
+<% if logged_in? %>
+<div class="ui inverted secondary top attached menu loggedIn">
+  <a class="item">
+    <%= image_tag("median-logo3.png", class:"ui tiny image") %>
+  </a>
+    <%= link_to "Home", users_path(), :class=>"item" %>
+    <%= link_to "Profile", user_path(session[:user_id]), :class=>"item"%>
+  <div class="right menu">
+    <div class="item">
+     <%= image_tag(@current_user.img_url, class:"ui avatar bordered image") %>
+    </div>
+    <%= link_to "Signout", logout_path, method: :delete, :class=>"item" %>
+  </div>
 
-      <% if logged_in? %>
-      <div class="ui grid">
-        <div class="sixteen wide column loggedIn">
-          <a class="active item">
-            <%= image_tag("median-logo3.png", class:"medianLogoNav") %>
-          </a>
-          <%= link_to "Home", users_path(), :class=>"active item" %>
-          <%= link_to "Profile", user_path(session[:user_id]), :class=>"active item"%>
-          <%= link_to "Signout", logout_path, method: :delete, :class=>"active item" %>
-          
-        </div>
-        
-      </div>
+<% end  %>
 
-    <% end  %>
+
       
     <!--   add flash messages -->
 
@@ -29,3 +29,4 @@
     <% end %>
     <% end %>
 
+</div>
