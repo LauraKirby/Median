@@ -15,11 +15,11 @@ class SessionsController < ApplicationController
   	    session[:user_id] = found_user.id
   	    redirect_to users_path
   	  else
-  	    flash[:alert] = "email / password combination is invalid!"
+  	    flash[:alert] = "Incorrect username or password"
   	    redirect_to login_path(@user)
   	  end
   	else
-  	  flash[:alert] = "please enter username and password"
+  	  flash[:alert] = "Please enter username and password"
   	  redirect_to login_path
   	end
   end

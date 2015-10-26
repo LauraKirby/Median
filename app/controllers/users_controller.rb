@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     puts params
   		if @user.save
         session[:user_id] = @user.id
-  			redirect_to users_path, flash: {success: "#{@user.first_name} created"}
+  			redirect_to users_path
   		else
   			render :new
   		end

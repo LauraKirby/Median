@@ -47,12 +47,11 @@ ActiveRecord::Schema.define(version: 20151025232454) do
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "email"
-    t.string   "img_url"
     t.string   "address"
     t.string   "password"
     t.string   "password_digest"
-    t.datetime "created_at",                                                                         null: false
-    t.datetime "updated_at",                                                                         null: false
+    t.datetime "created_at",                                                                 null: false
+    t.datetime "updated_at",                                                                 null: false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
@@ -60,7 +59,7 @@ ActiveRecord::Schema.define(version: 20151025232454) do
     t.string   "password_reset_token"
     t.decimal  "lat",                  precision: 10, scale: 6
     t.decimal  "lng",                  precision: 10, scale: 6
-    t.string   "image_url",                                     default: "/images/default_user.png"
+    t.string   "img_url",                                       default: "default_user.png"
   end
 
   add_foreign_key "comments", "places"

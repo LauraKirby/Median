@@ -8,7 +8,7 @@
 
 
 		<form class="ui center form profileForm">
-			<%= image_tag @current_user.img_url, :class => "avatarProfile field" %>
+			<span>User Image: </span><%= image_tag @current_user.img_url, :class => "avatarProfile field" %>
 			<div class="field">
 				<p>User Name: <%= @current_user.first_name %></p>
 			</div>
